@@ -1,0 +1,164 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(70deg,rgba(189, 91, 21, 0.828),rgb(48, 23, 5),chocolate);
+    color: bisque;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header h1{
+    text-transform:capitalize;
+    
+}
+
+header h1 span{
+    color: rgb(27, 12, 1);
+}
+
+header .hamb img{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+header button{
+    cursor: pointer;
+}
+
+header button:active{
+    transform: translateY(5px);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main .un{
+    margin: 20px;
+    margin-top: 7rem;
+    font-size: 40px;
+    line-height: 0.5;
+}
+
+main .un span{
+    color: black;
+    text-transform: uppercase;
+}
+
+main .deux .deuxio img{
+    padding-right: 8rem;
+    width: 350px;
+    height: 400px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    
+    
+}
+
+main .deux .animation{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .deux .animation .cercle{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(70deg,#462209,rgb(210, 105, 30));
+    border-radius: 50%;
+    animation: 10s animated ease-in-out infinite;
+}
+
+main .deux .animation .cercle:nth-child(2){
+    animation-delay: 5s;
+}
+
+@keyframes animated {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(100px);}
+    100%{transform: translateY(0);}
+    
+}
+
+.helas{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+}
+
+.helas .premier{
+    display: none;
+    width: 50vw;
+    background-color: whitesmoke;
+    height: 100vh;
+    border: 3px solid black;
+    color: black;
+}
+
+.helas .premier .head{
+    display: flex;
+    padding: 0 10px;
+    line-height: 0.01;
+    align-items: center;
+    background-color: rgba(161, 112, 207, 0.522);
+    height: 5rem;
+    gap: 10px;
+}
+
+.helas .premier img{
+    width: 50px;
+    height: 70px;
+    border-radius: 70%;
+    border: 1px solid black;
+} 
+
+.helas .premier .text{
+    text-transform: uppercase;
+
+
+}
+
+footer{
+    display: flex;
+
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer ul {
+    text-decoration: none;
+    gap: 10px;
+
+}
+
+footer ul li a img{
+    width: 50px;
+}
+
